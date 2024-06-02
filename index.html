@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="home-container">
+        <div class="header">
+            <div class="logo">
+                ATG.WORLD
+            </div>
+            <div class="search">
+                <i class="fas fa-search"></i>
+                <input type="text" placeholder="Search for your favorite groups in ATG">
+            </div>
+            <div class="account">
+                <p onclick="handleShowSignup()">Create account. <span>It's free!</span><i class="fas fa-chevron-down"></i></p>
+            </div>
+        </div>
+        <div class="image">
+            <img src="images/laptop.jpg" alt="laptop" class="laptop">
+        </div>
+        <p class="image-text1">
+            Computer Engineering
+            <sub class="image-text2">142,765 Computer Engieers follow this</sub>
+        </p>
+        <div class="joins">
+            <i class="fas fa-arrow-left"></i>
+            <p>Join Group</p>
+        </div>
+    </div>
+
+    <div class="posts">
+        <div class="post-header">
+            <div class="left">
+                <p style="color: black;">All Posts(32)</p>
+                <p>Article</p>
+                <p>Event</p>
+                <p>Education</p>
+                <p>Job</p>
+            </div>
+            <div class="right">
+                <div class="post">
+                    Write a Post 
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="group">
+                    <i class="fas fa-users"></i>
+                    Join Group
+                </div>
+            </div>
+        </div>
+        <hr style="width: 70%;" class="first-hr">
+        <div class="user-post">
+            <div class="posters">
+                <div class="post-details">
+                    <div class="image-container">
+                        <img src="images/mountain.jpg" alt="mount">
+                    </div>
+                    <div class="article-detail">
+                        <div class="article">
+                            <img src="images/image.png"/>
+                            <h3>Article</h3>
+                        </div>
+                        <div class="detail-menu">
+                            <h2>What if famous brands had regular fonts ? Meet RegularBrands!</h2>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <p>I've worked in UX for the better part of a decade. From now on, I plan to rei...</p>
+                    </div>
+                    <div class="user-profile-detail">
+                        <div class="profile">
+                            <img src="images/profile1.jpg" alt="profile1">
+                            <p>Sarthak Kamra</p>
+                        </div>
+                        <div class="share-view">
+                            <div class="views">
+                                <i class="fas fa-eye"></i>
+                                <p>1.4k Views</p>
+                            </div>
+                            <div class="share">
+                                <img src="images/share.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-details">
+                    <div class="image-container">
+                        <img src="images/education.jpg" alt="edication">
+                    </div>
+                    <div class="article-detail">
+                        <div class="article">
+                            <img src="images/bird.jpg"/>
+                            <h3>Education</h3>
+                        </div>
+                        <div class="detail-menu">
+                            <h2>Tax Benefits for Investment under National Pension Scheme launched by Government</h2>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <p>I've worked in UX for the better part of a decade. From now on, I plan to rei...</p>
+                    </div>
+                    <div class="user-profile-detail">
+                        <div class="profile">
+                            <img src="images/profile2.jpg" alt="profile2">
+                            <p>Sarah West</p>
+                        </div>
+                        <div class="share-view">
+                            <div class="views">
+                                <i class="fas fa-eye"></i>
+                                <p>1.4k Views</p>
+                            </div>
+                            <div class="share">
+                                <img src="images/share.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-details">
+                    <div class="image-container">
+                        <img src="images/car.jpg" alt="car">
+                    </div>
+                    <div class="article-detail">
+                        <div class="article">
+                            <img src="images/calendar.jpg"/>
+                            <h3>Meetup</h3>
+                        </div>
+                        <div class="detail-menu">
+                            <h2>Finance & Investment Elite Social Mixer @Lujiazui</h2>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="date-locat">
+                            <div class="date">
+                                <i class="fas fa-calendar"></i>
+                                <p>Fri, 12 Oct, 2018</p>
+                            </div>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Ahmedabad, India</p>
+                            </div>
+                        </div>
+                        <button>Visit Website</button>
+                    </div>
+                    <div class="user-profile-detail">
+                        <div class="profile">
+                            <img src="images/profile3.jpg" alt="profile3">
+                            <p>Ronal Jones</p>
+                        </div>
+                        <div class="share-view">
+                            <div class="views">
+                                <i class="fas fa-eye"></i>
+                                <p>1.4k Views</p>
+                            </div>
+                            <div class="share">
+                                <img src="images/share.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="post-details">
+                    <div class="article-detail">
+                        <div class="article">
+                            <img src="images/suite.jpeg"/>
+                            <h3>Job</h3>
+                        </div>
+                        <div class="detail-menu">
+                            <h2>Software Developer</h2>
+                            <i class="fas fa-ellipsis-h"></i>
+                        </div>
+                        <div class="date-locat">
+                            <div class="date">
+                                <i class="fas fa-suitcase"></i>
+                                <p>Innovator Analytics Private Ltd.</p>
+                            </div>
+                            <div class="location">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Noida, India</p>
+                            </div>
+                        </div>
+                        <button style="color: rgb(7, 177, 98);">Apply on Timesjobs</button>
+                    </div>
+                    <div class="user-profile-detail">
+                        <div class="profile">
+                            <img src="images/profile4.jpg" alt="profile4">
+                            <p>Joseph Gray</p>
+                        </div>
+                        <div class="share-view">
+                            <div class="views">
+                                <i class="fas fa-eye"></i>
+                                <p>1.4k Views</p>
+                            </div>
+                            <div class="share">
+                                <img src="images/share.png"/>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profiles">
+                <div class="input">
+                    <input type="text" placeholder="Enter your location">
+                    <i class="fas fa-pen"></i>
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="description"><i class="fas fa-exclamation-circle"></i>Your location will help us serve better and extend a personalised experience.</div>
+                <div class="recommends">
+                    <div class="recommend-head">
+                        <i class="fas fa-thumbs-up"></i>
+                        <p>RECOMMENDED GROUPS</p>
+                    </div>
+                    <div class="recommend-group">
+                        <div class="profile">
+                            <div class="photo">
+                                <img src="images/profile5.jpg" alt="profile5">
+                                Leisure
+                            </div>
+                            <div class="follow">
+                                Follow
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="photo">
+                                <img src="images/profile6.jpeg" alt="profile6">
+                                Activism
+                            </div>
+                            <div class="follow">
+                                Follow
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="photo">
+                                <img src="images/profile7.jpeg" alt="profile7">
+                                MBA
+                            </div>
+                            <div class="follow">
+                                Follow
+                            </div>
+                        </div>
+                        <div class="profile">
+                            <div class="photo">
+                                <img src="images/profile8.jpeg" alt="profile8">
+                                Philosophy
+                            </div>
+                            <div class="follow">
+                                Follow
+                            </div>
+                        </div>
+                    </div>
+                    <p class="see">See More...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="signup-container">
+        <div class="signup">
+            <div class="sign-head">
+                Let's learn, share & inspire each other with our passion for computer engineering. Sign up now.
+            </div>
+            <i class="fas fa-times time-sign" onclick="handleTimes()"></i>
+            <div class="sign">
+                <div class="sign-left signs">
+                    <p>Create Account</p>
+                    <div class="inputs">
+                        <div class="input">
+                            <input type="text" placeholder="First Name" style="border-radius: 5px 0px 0px 0px; border-right: none;">
+                            <input type="text" placeholder="Last Name" style="border-radius: 0px 5px 0px 0px;">
+                        </div>
+                        <div class="input">
+                            <input type="email" placeholder="Email" style="border-top: none;">
+                        </div>
+                        <div class="input pass">
+                            <input type="password" placeholder="Password" style="border-top: none;">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="input">
+                            <input type="password" placeholder="Confirm Password" style="border-radius: 0px 0px 5px 5px; border-top: none;">
+                        </div>
+                        <div class="btn-nxt">
+                            <button class="sign-btn">Create Account</button>
+                            <p onclick="handleLogin()">or, Sign In</p>
+                        </div>
+                        <div class="third">
+                            <img src="images/facebook.jpeg" alt="facebook">
+                            <p>Sign up wih Facebook</p>
+                        </div>
+                        <div class="third">
+                            <img src="images/google.png" alt="facebook">
+                            <p>Sign up wih Google</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sign-left login">
+                    <p>Sign In</p>
+                    <div class="inputs">
+                        <div class="input">
+                            <input type="email" placeholder="Email" style="margin-top: 10px;">
+                        </div>
+                        <div class="input pass">
+                            <input type="password" placeholder="Password" style="border-top: none;">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <div class="btn-nxt">
+                            <button class="sign-btn">Sign In</button>
+                            <p onclick="handleSignup()">or, Create Account</p>
+                        </div>
+                        <div class="third">
+                            <img src="images/facebook.jpeg" alt="facebook">
+                            <p>Sign up wih Facebook</p>
+                        </div>
+                        <div class="third">
+                            <img src="images/google.png" alt="facebook">
+                            <p>Sign up wih Google</p>
+                        </div>
+                        <p class="forgot">Forgot Password?</p>
+                    </div>
+                </div>
+                <div class="sign-right rlogin">
+                    <p onclick="handleSignup()" class="slap">Don't have an account yet? <span style="color: blue;">Create new for free!</span></p>
+                    <img src="images/sign.jpg" alt="singup">
+                </div>
+                <div class="sign-right rsigns">
+                    <p onclick="handleLogin()" class="llap">Already have an account ? <span style="color: blue;">Sign In</span></p>
+                    <img src="images/sign.jpg" alt="singup">
+                    <h6>By signing up, you agree to our Terms & conditions, Privacy policy</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

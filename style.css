@@ -1,0 +1,621 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    left: 0;
+    top: 0;
+    font-family: 'Poppins';
+}
+
+
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Header Container */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 10px;
+}
+.header .logo {
+    position: absolute;
+    left: 20px;
+    font-size: 2rem;
+}
+.header .search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .search input{
+    padding: 10px;
+    border-radius: 0px 100px 100px 0px;
+    background: rgb(172, 168, 168,0.4);
+    border: none;
+    height: 36px;
+    width: 250px;
+    color: black;
+}
+.search i {
+    background: rgb(172, 168, 168,0.4);
+    border-radius: 100px 0px 0px 100px;
+    padding: 10px;
+    font-size: 1rem;
+    color: rgb(152, 143, 143);
+}
+.header .account {
+    position: absolute;
+    right: 40px;
+    cursor: pointer;
+}
+.account span {
+    color: blue;
+}
+.image {
+    flex-grow: 1;
+    display: flex;
+    width: 100%;
+}
+.image img {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+.image-text1{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    margin: 30px;
+    color: white;
+    top: 220px;
+    left: 50px;
+}
+.joins {
+    top: 10px;
+    position: absolute;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+.joins i {
+    margin-left: 20px;
+}
+.joins p {
+    margin-right: 20px;
+    border: 1px solid white;
+    padding: 5px 12px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    border-radius: 5px;
+}
+
+/* Post Header */ 
+.posts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 70%;
+}
+.post-header .left p {
+    margin: 10px;
+    color: rgb(172, 168, 168,0.8);
+}
+.post-header .left, .post-header .right {
+    display: flex;
+    align-items: center;
+}
+.post-header .right .post {
+    padding: 10px;
+    color: black;
+    background: rgb(172, 168, 168,0.4);
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+}
+.post-header .right .group {
+   padding: 10px;
+   background: rgb(55, 155, 254);
+   color: white;
+   border-radius: 10px;
+}
+.account i, .group i, .post i {
+    margin: 0px 5px;
+}
+
+/* Post-Container */
+.user-post {
+    display: flex;
+    justify-content: space-between;
+    max-width: 70%;
+}
+.posters {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-right: 60px;
+}
+.post-details {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 10px;
+    border: 1px solid rgb(135, 132, 132, 0.7);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.2);
+    width: 100%;
+}
+.post-details .image-container {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+}
+.image-container img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    max-width: 100%;
+}
+.article-detail {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.article-detail h3 {
+    font-size: 1rem;
+    font-weight: 550;
+}
+.article-detail .detail-menu, .article-detail .article {
+    display: flex;
+    margin-bottom: 10px;
+}
+.article {
+    display: flex;
+    align-items: center;
+}
+.article img {
+    width: 20px;
+    height: 15px;
+}
+.article-detail h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    max-width: 700px;
+    flex-grow: 1;
+}
+.detail-menu i {
+    font-size: 1.5rem;
+}
+.article-detail p {
+    color: rgba(110, 110, 110, 0.8);
+}
+.date-locat {
+    display: flex;
+    align-items: center;
+}
+.date, .location {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-right: 10px;
+}
+.date i, .location i {
+    margin: 10px;
+}
+.date p, .location p {
+    color: black;
+}
+.article-detail button {
+    padding: 10px;
+    background: white;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    color: red;
+}
+.user-profile-detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px 20px 20px;
+}
+.profile {
+    display: flex;
+    align-items: center;
+}
+.profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.profile p {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 10px;
+}
+.share-view {
+    display: flex;
+    align-items: center;
+}
+.share-view .views {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    font-size: 0.8rem;
+    color: rgba(127, 127, 127);
+}
+.views i {
+    margin: 10px;
+}
+.share-view .share {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(152, 143, 143,0.4);
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.share img {
+    width: 15px;
+    height: 15px;
+}
+
+.profiles {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin-top: 30px;
+}
+.profiles .input {
+    display: flex;
+    align-items: center;
+}
+.input input {
+    position: relative;
+    padding: 10px;
+    padding-left: 30px;
+    border: 2px solid rgb(0, 0, 0, 0.2);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size: 1rem;
+}
+.input i {
+    position: absolute;
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: rgb(0, 0, 0, 0.8);
+}
+.input .fa-map-marker-alt {
+    margin-left: 10px;
+}
+.input .fa-pen {
+    margin-left: 180px;
+}
+.description {
+    margin: 20px 0px;
+    color: rgb(136, 130, 130);
+}
+.description i {
+    margin-right: 10px;
+}
+.recommends {
+    display: flex;
+    flex-direction: column;
+}
+.recommend-head {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.recommend-head p {
+    margin-left: 10px;
+    letter-spacing: 0.2rem;
+}
+.recommend-group {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.recommend-group .profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.profile .photo {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+}
+.profile .photo img {
+    margin-right: 20px;
+}
+.follow {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background: rgb(193, 186, 186,0.6);
+    font-weight: 500;
+}
+.see {
+    margin-top: 50px;
+    margin-left: 200px;
+    color: rgb(46, 46, 250);
+    font-weight: 500;
+}
+
+/* Signup-Container */
+
+.signup-container {
+    top: 0;
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+}
+.time-sign {
+    right: 200px;
+    margin-top: -50px;
+    color: white;
+    background: green;
+    padding: 10px;
+    padding: 8px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+}
+.signup {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    max-width: 70%;
+    animation: animate1 2s ease forwards;
+}
+@keyframes animate1 {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.3;
+    } 100% {
+        width: 100%;
+        opacity: 1;
+    }
+}
+.signup .sign-head {
+    background: rgb(222, 255, 222);
+    padding: 10px;
+    text-align: center;
+    color: rgb(0, 161, 3);
+}
+.sign {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.sign-left {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px 20px 40px;
+    width: 50%;
+}
+.sign-left p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.inputs .input {
+    display: flex;
+    align-items: center;
+}
+.pass {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.pass input {
+    position: relative;
+}
+.pass i {
+    position: absolute;
+    right: 15px;
+    color: rgba(154, 145, 145);
+}
+.inputs input {
+    font-size: 0.9rem;
+    padding: 15px;
+    border: 1px solid rgb(0, 0, 0, 0.1);
+    width: 100%;
+    background: rgba(169, 174, 171,0.1);
+}
+.inputs .sign-btn {
+    margin: 10px 0px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid rgb(55, 155, 254);
+    background: rgb(55, 155, 254);
+    color: white;
+}
+.btn-nxt {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-nxt p {
+    display: none;
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+.inputs .third {
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    padding: 10px;
+}
+.sign-left .third img {
+    width: 15px;
+    height: 15px;
+}
+.third p {
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-left: 10px;
+}
+.sign-right {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    margin: 20px;
+}
+.sign-right p {
+    float: right;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.sign-right h6 {
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: grey;
+}
+@keyframes animate2 {
+    0% {
+        transform: translateY(-500px);
+        opacity: 0.4;
+    } 100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes animate3 {
+    0% {
+        transform: translateY(500px);
+        opacity: 0.4;
+    } 100% {
+        transform: translateZ(0);
+        opacity: 1;
+    }
+}
+.sign .signs,.sign .rsigns {
+    animation: animate2 1s ease forwards;
+}
+.login, .rlogin {
+    display: none;
+    animation: animate3 1s ease forwards;
+}
+.login .forgot {
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 980px) {
+    .posts {
+        align-items: normal;
+    }
+    .user-post {
+        max-width: 100%;
+    }
+    .posters, .post-details {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .first-hr {
+        display: none;
+    }
+}
+@media (max-width: 870px) {
+    .signup {
+        max-width: 100%;
+        height: 100%;
+        margin-top: 180px;
+        border-radius: 10px 10px 0px 0px;
+        padding: 20px;
+    }
+    .sign {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sign-left, .sign-right {
+        width: 100%;
+        margin: 0;
+    }
+    .sign-head {
+        display: none;
+    }
+    .sign-right img {
+        display: none;
+    }
+    .time-sign {
+        right: 30px;
+        margin-top: -10px;
+        background: none;
+        color: black;
+        cursor: pointer;
+        padding: 0;
+    }
+    .inputs .sign-btn {
+        display: block;
+        width: 30%;
+    } .slap, .llap {
+        display: none;
+    } .btn-nxt p {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 500px) {
+    .image-text1 {
+        left: 0px;
+    }
+    .article h3 {
+        font-size: 1rem;
+    }
+    .detail-menu h2 {
+        font-size: 1rem;
+    }
+    .profile p {
+        font-size: 0.8rem;
+    }
+    .profile img {
+        width: 40px;
+        height: 40px;
+    }
+    .date p, .location p {
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+}
